@@ -40,7 +40,7 @@ data/website_phishing.csv    데이터 (UCI Website Phishing, 1,353행 × 10열,
 data/variable_dictionary.csv 변수 사전 (변수 · 의미 · 관찰된 값)
 data/results.json            code/01_contest.py 결과 (모든 페이지 숫자의 원본)
 code/                        재현 코드 · requirements · 설명
-img/                         표지 그림 자리 (cover_00~06.webp를 넣으면 대체 표지 대신 보임)
+img/                         표지 cover_00~06 · 썸네일 thumb · 공유 미리보기 og (WebP), 원본 PNG는 img/src/
 kg/{페이지}/                 지식 색인 원본 kg.json · refs.json · meta.json
 docs/                        표지 지시문(Genspark용) · 이미지 제작 명세서 · 검수 보고서
 review_log.json              검수 기록 (페르소나 점수)
