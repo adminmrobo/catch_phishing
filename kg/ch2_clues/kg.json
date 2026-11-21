@@ -238,8 +238,8 @@
    "id": "lab:claim/sign-reversal",
    "type": "Claim",
    "label": {
-    "ko": "9개 중 8개 단서가 설명서와 반대 방향",
-    "en": "Eight of nine features run opposite to the documented coding"
+    "ko": "9개 중 7개 단서가 설명서와 반대 방향",
+    "en": "Seven of nine features run opposite to the documented coding"
    },
    "page": "ch2_clues",
    "anchor": "#s4",
@@ -252,7 +252,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "web_traffic만 양의 상관"
+    "ko": "web_traffic만 양의 상관, having_IP_Address는 예/아니오라 제외"
    }
   },
   {

@@ -172,8 +172,8 @@
   },
   "lab:claim/sign-reversal": {
    "label": {
-    "ko": "9개 중 8개 단서가 설명서와 반대 방향",
-    "en": "Eight of nine features run opposite to the documented coding"
+    "ko": "9개 중 7개 단서가 설명서와 반대 방향",
+    "en": "Seven of nine features run opposite to the documented coding"
    },
    "type": "Claim",
    "first_page": "ch2_clues"

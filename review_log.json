@@ -1,0 +1,11 @@
+{"series": "catch_phishing_lab", "domain": ["ai", "stats"], "format": "duel+contest",
+ "runs": [
+  {"run": 1, "date": "2026-11-21", "skill": "1.15", "reviewer": "같은 대화의 제작 모델 (자체 검수)",
+   "machine": {"M1": "pass", "M2": "pass", "M3": "pass", "M4": "pass", "M5": "pass", "M6": "pass", "M7": "pass", "M8": "n/a", "M9": "n/a"},
+   "scores": {"A": 4.5, "B": 4.0, "C": 3.5, "D": 4.0, "E": 4.5, "F": 3.5},
+   "tasks_open": ["C: 예선 시험지 수 422", "C: 반대 방향 단서 7개로 통일", "B: SMOTE 범주형 한계", "F: 4·5장 생성 AI 연결 상자"], "tasks_done": [], "note": ""},
+  {"run": 2, "date": "2026-11-21", "skill": "1.15", "reviewer": "같은 대화의 제작 모델 (반영 후 재채점)",
+   "machine": {"M1": "pass", "M2": "pass", "M3": "pass", "M4": "pass", "M5": "pass", "M6": "pass", "M7": "pass", "M8": "n/a", "M9": "n/a"},
+   "scores": {"A": 4.5, "B": 4.5, "C": 4.5, "D": 4.0, "E": 4.5, "F": 4.0},
+   "tasks_open": ["교차 검수", "표지 7장 반영"], "tasks_done": [], "note": ""}
+ ]}
