@@ -1,0 +1,235 @@
+{
+ "version": "1.0",
+ "page": "ch3_checkup",
+ "nodes": [
+  {
+   "id": "lab:concept/missing-value",
+   "type": "Concept",
+   "label": {
+    "ko": "결측값",
+    "en": "Missing value"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "stats"
+   ],
+   "definition": {
+    "ko": "비어 있는 값"
+   }
+  },
+  {
+   "id": "lab:method/iqr-rule",
+   "type": "Method",
+   "label": {
+    "ko": "IQR 이상치 규칙",
+    "en": "IQR outlier rule"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "stats"
+   ],
+   "definition": {
+    "ko": "Q1−1.5IQR ~ Q3+1.5IQR 밖을 이상치로"
+   }
+  },
+  {
+   "id": "lab:method/z-score",
+   "type": "Method",
+   "label": {
+    "ko": "Z 점수 규칙",
+    "en": "Z-score rule"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "stats"
+   ],
+   "definition": {
+    "ko": "|Z| > 3을 이상치로"
+   }
+  },
+  {
+   "id": "lab:claim/iqr-false-alarm",
+   "type": "Claim",
+   "label": {
+    "ko": "범주형 단서에서 IQR은 오탐을 만든다",
+    "en": "IQR raises false alarms on categorical features"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "having_IP_Address 155개 오탐"
+   }
+  },
+  {
+   "id": "lab:concept/duplicate-rows",
+   "type": "Concept",
+   "label": {
+    "ko": "중복 행",
+    "en": "Duplicate rows"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "완전 중복 629행 (46%)"
+   }
+  },
+  {
+   "id": "lab:concept/label-conflict",
+   "type": "Concept",
+   "label": {
+    "ko": "정답 충돌",
+    "en": "Label conflict"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단서가 같은데 정답이 다른 48묶음"
+   }
+  },
+  {
+   "id": "lab:concept/accuracy-ceiling",
+   "type": "Metric",
+   "label": {
+    "ko": "정확도 천장",
+    "en": "Accuracy ceiling"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "다 외워도 최대 0.9601"
+   }
+  },
+  {
+   "id": "lab:method/isolation-forest",
+   "type": "Method",
+   "label": {
+    "ko": "Isolation Forest",
+    "en": "Isolation Forest"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "빨리 고립되는 점을 이상치로"
+   }
+  },
+  {
+   "id": "lab:method/lof",
+   "type": "Method",
+   "label": {
+    "ko": "LOF",
+    "en": "Local Outlier Factor"
+   },
+   "page": "ch3_checkup",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "이웃보다 밀도가 낮은 점을 이상치로"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:claim/iqr-false-alarm",
+   "p": "lab:about",
+   "o": "lab:method/iqr-rule",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/z-score",
+   "p": "lab:contrastsWith",
+   "o": "lab:method/iqr-rule",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/label-conflict",
+   "p": "lab:causes",
+   "o": "lab:concept/accuracy-ceiling",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/duplicate-rows",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/label-conflict",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/lof",
+   "p": "lab:contrastsWith",
+   "o": "lab:method/isolation-forest",
+   "anchor": "#s4",
+   "confidence": "high"
+  }
+ ]
+}

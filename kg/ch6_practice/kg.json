@@ -1,0 +1,134 @@
+{
+ "version": "1.0",
+ "page": "ch6_practice",
+ "nodes": [
+  {
+   "id": "lab:tool/inspection-window",
+   "type": "Simulation",
+   "label": {
+    "ko": "사이트 검사 창구",
+    "en": "Site inspection window"
+   },
+   "page": "ch6_practice",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단서 9개 → 세 모델 판정"
+   }
+  },
+  {
+   "id": "lab:tool/inspection-line",
+   "type": "Simulation",
+   "label": {
+    "ko": "검사 라인",
+    "en": "Inspection line"
+   },
+   "page": "ch6_practice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시험지 271개 흘려보내기"
+   }
+  },
+  {
+   "id": "lab:task/reproduce-colab",
+   "type": "Task",
+   "label": {
+    "ko": "Colab에서 대회 다시 치르기",
+    "en": "Reproduce in Colab"
+   },
+   "page": "ch6_practice",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "코드 5단계"
+   }
+  },
+  {
+   "id": "lab:concept/deployment-checks",
+   "type": "Concept",
+   "label": {
+    "ko": "배포 전 점검",
+    "en": "Deployment checks"
+   },
+   "page": "ch6_practice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터 시점·단서 추출·의심 처리·비용·감시"
+   }
+  },
+  {
+   "id": "lab:claim/one-layer",
+   "type": "Claim",
+   "label": {
+    "ko": "탐지 모델은 한 겹의 방어",
+    "en": "A detector is one layer of defense"
+   },
+   "page": "ch6_practice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "경고·신고·교육과 함께"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:tool/inspection-line",
+   "p": "lab:about",
+   "o": "lab:concept/unseen-patterns",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:task/reproduce-colab",
+   "p": "lab:uses",
+   "o": "lab:dataset/uci-website-phishing",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/one-layer",
+   "p": "lab:about",
+   "o": "lab:concept/deployment-checks",
+   "anchor": "#s4",
+   "confidence": "high"
+  }
+ ]
+}

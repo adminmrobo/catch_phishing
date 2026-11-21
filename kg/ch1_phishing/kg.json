@@ -1,0 +1,204 @@
+{
+ "version": "1.0",
+ "page": "ch1_phishing",
+ "nodes": [
+  {
+   "id": "lab:concept/phishing",
+   "type": "Concept",
+   "label": {
+    "ko": "피싱 사이트",
+    "en": "Phishing website"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "진짜 사이트를 흉내 내 개인정보를 빼내는 가짜 페이지"
+   }
+  },
+  {
+   "id": "lab:concept/hand-rule",
+   "type": "Method",
+   "label": {
+    "ko": "사람이 쓴 규칙",
+    "en": "Hand-written rule"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "경험으로 정한 if-then 규칙 하나"
+   }
+  },
+  {
+   "id": "lab:concept/multiclass",
+   "type": "Concept",
+   "label": {
+    "ko": "3클래스 분류",
+    "en": "Multiclass classification"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정상·의심·피싱 중 하나를 고르는 분류"
+   }
+  },
+  {
+   "id": "lab:concept/class-imbalance",
+   "type": "Concept",
+   "label": {
+    "ko": "불균형 데이터",
+    "en": "Class imbalance"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답 한쪽이 매우 적은 데이터 (의심 7.6%)"
+   }
+  },
+  {
+   "id": "lab:concept/train-test-split",
+   "type": "Method",
+   "label": {
+    "ko": "학습/시험 나누기",
+    "en": "Train-test split"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "20%를 시험지로 봉인하고 80%로만 학습"
+   }
+  },
+  {
+   "id": "lab:concept/stratify",
+   "type": "Method",
+   "label": {
+    "ko": "층화 추출",
+    "en": "Stratified split"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "나눌 때 정답 비율을 양쪽에 똑같이 맞춤"
+   }
+  },
+  {
+   "id": "lab:dataset/uci-website-phishing",
+   "type": "Dataset",
+   "label": {
+    "ko": "UCI Website Phishing 데이터",
+    "en": "UCI Website Phishing dataset"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "1,353개 사이트, 단서 9개, 정답 3종"
+   }
+  },
+  {
+   "id": "lab:claim/one-rule-limit",
+   "type": "Claim",
+   "label": {
+    "ko": "규칙 하나로는 의심 사이트를 못 잡는다",
+    "en": "A single rule cannot catch suspicious sites"
+   },
+   "page": "ch1_phishing",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "규칙은 피싱/정상 둘로만 나눔"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/stratify",
+   "p": "lab:refines",
+   "o": "lab:concept/train-test-split",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/class-imbalance",
+   "p": "lab:partOf",
+   "o": "lab:dataset/uci-website-phishing",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/one-rule-limit",
+   "p": "lab:supports",
+   "o": "lab:concept/multiclass",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/hand-rule",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/multiclass",
+   "anchor": "#s2",
+   "confidence": "high"
+  }
+ ]
+}

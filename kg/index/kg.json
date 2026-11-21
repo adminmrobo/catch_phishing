@@ -1,0 +1,113 @@
+{
+ "version": "1.0",
+ "page": "index",
+ "nodes": [
+  {
+   "id": "lab:series/catch-phishing-lab",
+   "type": "Topic",
+   "label": {
+    "ko": "피싱 사이트 탐지 연구실",
+    "en": "Catch-phishing lab"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "피싱 데이터로 여는 모델 대회 해설 6장"
+   }
+  },
+  {
+   "id": "lab:dataset/uci-website-phishing",
+   "type": "Dataset",
+   "label": {
+    "ko": "UCI Website Phishing 데이터",
+    "en": "UCI Website Phishing dataset"
+   },
+   "page": "index",
+   "anchor": "#data",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "1,353개 사이트, 단서 9개, 정답 3종"
+   }
+  },
+  {
+   "id": "lab:concept/phishing",
+   "type": "Concept",
+   "label": {
+    "ko": "피싱 사이트",
+    "en": "Phishing website"
+   },
+   "page": "index",
+   "anchor": "#first",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "진짜 사이트를 흉내 낸 가짜 페이지"
+   }
+  },
+  {
+   "id": "lab:concept/model-contest",
+   "type": "Method",
+   "label": {
+    "ko": "모델 대회 형식",
+    "en": "Model contest format"
+   },
+   "page": "index",
+   "anchor": "#rules",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "출전·심사·방청, 네 라운드, 반칙 규정"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:series/catch-phishing-lab",
+   "p": "lab:uses",
+   "o": "lab:dataset/uci-website-phishing",
+   "anchor": "#data",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:series/catch-phishing-lab",
+   "p": "lab:about",
+   "o": "lab:concept/phishing",
+   "anchor": "#first",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/model-contest",
+   "p": "lab:partOf",
+   "o": "lab:series/catch-phishing-lab",
+   "anchor": "#rules",
+   "confidence": "high"
+  }
+ ]
+}

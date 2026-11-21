@@ -1,0 +1,11 @@
+﻿변수,의미,관찰된 값
+SFH,Server Form Handler — 입력 폼을 처리하는 서버 주소가 비었거나 외부 도메인인지,"-1, 0, 1"
+popUpWidnow,팝업 창 사용 여부(원본 철자 오류 'Widnow' 그대로 사용),"-1, 0, 1"
+SSLfinal_State,HTTPS 인증서 상태(발급기관 신뢰도·유효기간),"-1, 0, 1"
+Request_URL,페이지 안 이미지·영상 등이 외부 도메인에서 오는 비율,"-1, 0, 1"
+URL_of_Anchor,<a> 태그 링크가 외부·빈 링크(#)를 가리키는 비율,"-1, 0, 1"
+web_traffic,웹사이트 방문자 순위(트래픽),"-1, 0, 1"
+URL_Length,의심 부분을 숨기기 위한 긴 URL 여부,"-1, 0, 1"
+age_of_domain,도메인 등록 후 경과 기간,"-1, 1 (2개 값)"
+having_IP_Address,도메인 대신 IP 주소를 쓰는지,"0, 1 (2개 값)"
+Result,"정답: 1 = Legitimate(정상), 0 = Suspicious(의심), -1 = Phishy(피싱)","-1, 0, 1"

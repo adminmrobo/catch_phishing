@@ -1,0 +1,260 @@
+{
+ "version": "1.0",
+ "page": "ch4_models",
+ "nodes": [
+  {
+   "id": "lab:method/smote",
+   "type": "Method",
+   "label": {
+    "ko": "SMOTE",
+    "en": "SMOTE"
+   },
+   "page": "ch4_models",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "적은 쪽 데이터 사이에 새 데이터를 만들어 늘림"
+   }
+  },
+  {
+   "id": "lab:method/logistic-regression",
+   "type": "Method",
+   "label": {
+    "ko": "로지스틱 회귀 (다항)",
+    "en": "Multinomial logistic regression"
+   },
+   "page": "ch4_models",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답별 점수 → 소프트맥스 → 확률"
+   }
+  },
+  {
+   "id": "lab:concept/softmax",
+   "type": "Concept",
+   "label": {
+    "ko": "소프트맥스",
+    "en": "Softmax"
+   },
+   "page": "ch4_models",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "점수 여러 개를 합이 1인 확률로"
+   }
+  },
+  {
+   "id": "lab:method/decision-tree",
+   "type": "Method",
+   "label": {
+    "ko": "의사결정나무",
+    "en": "Decision tree"
+   },
+   "page": "ch4_models",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "예/아니오 질문 잇기"
+   }
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Concept",
+   "label": {
+    "ko": "과적합",
+    "en": "Overfitting"
+   },
+   "page": "ch4_models",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습 데이터를 외워 처음 보는 데이터에 약함"
+   }
+  },
+  {
+   "id": "lab:method/gradient-boosting",
+   "type": "Method",
+   "label": {
+    "ko": "그래디언트 부스팅",
+    "en": "Gradient boosting"
+   },
+   "page": "ch4_models",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "작은 나무를 차례로 더해 오답을 보정"
+   }
+  },
+  {
+   "id": "lab:concept/feature-importance",
+   "type": "Metric",
+   "label": {
+    "ko": "특성 중요도",
+    "en": "Feature importance"
+   },
+   "page": "ch4_models",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "나무가 단서를 쓴 크기, 원인 아님"
+   }
+  },
+  {
+   "id": "lab:concept/data-leakage",
+   "type": "Concept",
+   "label": {
+    "ko": "데이터 누수",
+    "en": "Data leakage"
+   },
+   "page": "ch4_models",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시험지 정보가 학습에 섞임"
+   }
+  },
+  {
+   "id": "lab:claim/smote-before-split",
+   "type": "Claim",
+   "label": {
+    "ko": "나누기 전 SMOTE는 누수다",
+    "en": "SMOTE before splitting leaks test information"
+   },
+   "page": "ch4_models",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "예선 기록 무효"
+   }
+  },
+  {
+   "id": "lab:claim/tune-on-test",
+   "type": "Claim",
+   "label": {
+    "ko": "시험지로 설정을 고르면 반칙",
+    "en": "Tuning on the test set is cheating"
+   },
+   "page": "ch4_models",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "설정은 교차검증으로"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/softmax",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/logistic-regression",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/decision-tree",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/overfitting",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gradient-boosting",
+   "p": "lab:builtOn",
+   "o": "lab:method/decision-tree",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/smote-before-split",
+   "p": "lab:about",
+   "o": "lab:concept/data-leakage",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/smote",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/data-leakage",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/tune-on-test",
+   "p": "lab:about",
+   "o": "lab:concept/data-leakage",
+   "anchor": "#s3",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "series_ko": "AI 응용 · 피싱 사이트 탐지",
+ "title_ko": "가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (catch_phishing_lab)",
+ "site_title": "가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (목차)",
+ "site_url": "https://adminmrobo.github.io/catch_phishing/",
+ "ontology": {
+  "pages": [
+   {
+    "path": "index.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch1_phishing.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch2_clues.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch3_checkup.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch4_models.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch5_final.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch6_practice.html",
+    "kg": true,
+    "export": true
+   }
+  ],
+  "files": [
+   "kg/index/kg.json",
+   "kg/ch1_phishing/kg.json",
+   "kg/ch2_clues/kg.json",
+   "kg/ch3_checkup/kg.json",
+   "kg/ch4_models/kg.json",
+   "kg/ch5_final/kg.json",
+   "kg/ch6_practice/kg.json"
+  ]
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 7
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_00",
+   "role": "cover",
+   "page": "index.html",
+   "path": "img/cover_00.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_00",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "네 캐릭터가 똑같이 생긴 두 로그인 화면 가운데 낚싯바늘이 걸린 가짜 화면을 살피는 낮의 연구실 대회장"
+  },
+  {
+   "id": "thumb_00",
+   "role": "thumb",
+   "path": "img/thumb_00.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_00",
+   "status": "pending"
+  },
+  {
+   "id": "og_00",
+   "role": "og",
+   "path": "img/og_00.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_00",
+   "status": "pending"
+  },
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "page": "ch1_phishing.html",
+   "path": "img/cover_01.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_01",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "시험지 상자에 봉인 테이프를 붙이는 초파리와 대회를 여는 박사, 각오를 다지는 조수, 빈 점수판을 닦는 주판봇"
+  },
+  {
+   "id": "thumb_01",
+   "role": "thumb",
+   "path": "img/thumb_01.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_01",
+   "status": "pending"
+  },
+  {
+   "id": "og_01",
+   "role": "og",
+   "path": "img/og_01.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_01",
+   "status": "pending"
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "page": "ch2_clues.html",
+   "path": "img/cover_02.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_02",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "단서 카드 아홉 장을 붙인 코르크 판 앞에서 네 캐릭터가 단서를 읽는 장면"
+  },
+  {
+   "id": "thumb_02",
+   "role": "thumb",
+   "path": "img/thumb_02.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_02",
+   "status": "pending"
+  },
+  {
+   "id": "og_02",
+   "role": "og",
+   "path": "img/og_02.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_02",
+   "status": "pending"
+  },
+  {
+   "id": "cover_03",
+   "role": "cover",
+   "page": "ch3_checkup.html",
+   "path": "img/cover_03.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_03",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "똑같은 종이 더미를 청진기로 진찰하는 초파리와 이상한 종이를 쓸어 버리려다 멈춘 주판봇"
+  },
+  {
+   "id": "thumb_03",
+   "role": "thumb",
+   "path": "img/thumb_03.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_03",
+   "status": "pending"
+  },
+  {
+   "id": "og_03",
+   "role": "og",
+   "path": "img/og_03.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_03",
+   "status": "pending"
+  },
+  {
+   "id": "cover_04",
+   "role": "cover",
+   "page": "ch4_models.html",
+   "path": "img/cover_04.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_04",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "저울·갈림길 나무·작은 나무 줄을 든 세 출전자와 깨진 봉인을 가리키는 초파리"
+  },
+  {
+   "id": "thumb_04",
+   "role": "thumb",
+   "path": "img/thumb_04.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_04",
+   "status": "pending"
+  },
+  {
+   "id": "og_04",
+   "role": "og",
+   "path": "img/og_04.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_04",
+   "status": "pending"
+  },
+  {
+   "id": "cover_05",
+   "role": "cover",
+   "page": "ch5_final.html",
+   "path": "img/cover_05.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_05",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "시상대 위 세 출전자와 심사석의 박사·주판봇·초파리, 방청석에서 응원하는 실루엣 셋"
+  },
+  {
+   "id": "thumb_05",
+   "role": "thumb",
+   "path": "img/thumb_05.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_05",
+   "status": "pending"
+  },
+  {
+   "id": "og_05",
+   "role": "og",
+   "path": "img/og_05.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot",
+    "sia",
+    "moa",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_05",
+   "status": "pending"
+  },
+  {
+   "id": "cover_06",
+   "role": "cover",
+   "page": "ch6_practice.html",
+   "path": "img/cover_06.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_catch_phishing.md#cover_06",
+   "source_of": null,
+   "status": "pending",
+   "alt_ko": "색 상자가 지나가는 검사 라인과 창구에서 상자를 받는 주판봇, 램프를 보는 초파리"
+  },
+  {
+   "id": "thumb_06",
+   "role": "thumb",
+   "path": "img/thumb_06.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_06",
+   "status": "pending"
+  },
+  {
+   "id": "og_06",
+   "role": "og",
+   "path": "img/og_06.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_06",
+   "status": "pending"
+  }
+ ],
+ "updated": "2026-11-21"
+}

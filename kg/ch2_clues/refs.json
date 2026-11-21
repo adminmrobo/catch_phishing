@@ -1,0 +1,76 @@
+[
+ {
+  "id": "abdelhamid2014uci",
+  "type": "dataset",
+  "title": "Website Phishing [Dataset]",
+  "author": [
+   {
+    "family": "Abdelhamid",
+    "given": "Neda"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2014
+    ]
+   ]
+  },
+  "publisher": "UCI Machine Learning Repository",
+  "DOI": "10.24432/C5B301",
+  "URL": "https://archive.ics.uci.edu/dataset/379/website+phishing",
+  "genre": "데이터셋 (CC BY 4.0)",
+  "lab": {
+   "work": "lab:work/abdelhamid2014uci",
+   "role": "data",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": true
+   },
+   "checkedBy": "UCI 저장소 데이터셋 379 페이지 (2026-11-21 확인)",
+   "checkedSource": "web"
+  }
+ },
+ {
+  "id": "ahn2026lecture",
+  "type": "speech",
+  "title": "피싱 사이트 탐지 — 변수 분석 · 이상탐지 · 모델별 정확도 비교 (실습 노트북·강의 슬라이드)",
+  "author": [
+   {
+    "family": "안",
+    "given": "상선"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026
+    ]
+   ]
+  },
+  "genre": "강의 자료 (Colab 노트북, 슬라이드 35쪽)",
+  "publisher": "(주)M-Robo",
+  "lab": {
+   "work": "lab:work/ahn2026lecture",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": false,
+    "pages": true,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 노트북·PDF에서 옮김",
+   "checkedSource": "author"
+  }
+ }
+]

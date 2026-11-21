@@ -1,0 +1,478 @@
+{
+ "series": "catch_phishing_lab",
+ "date": "2026-11-21",
+ "new_ids": {
+  "lab:series/catch-phishing-lab": {
+   "label": {
+    "ko": "피싱 사이트 탐지 연구실",
+    "en": "Catch-phishing lab"
+   },
+   "type": "Topic",
+   "first_page": "index"
+  },
+  "lab:dataset/uci-website-phishing": {
+   "label": {
+    "ko": "UCI Website Phishing 데이터",
+    "en": "UCI Website Phishing dataset"
+   },
+   "type": "Dataset",
+   "first_page": "index"
+  },
+  "lab:concept/phishing": {
+   "label": {
+    "ko": "피싱 사이트",
+    "en": "Phishing website"
+   },
+   "type": "Concept",
+   "first_page": "index"
+  },
+  "lab:concept/model-contest": {
+   "label": {
+    "ko": "모델 대회 형식",
+    "en": "Model contest format"
+   },
+   "type": "Method",
+   "first_page": "index"
+  },
+  "lab:concept/hand-rule": {
+   "label": {
+    "ko": "사람이 쓴 규칙",
+    "en": "Hand-written rule"
+   },
+   "type": "Method",
+   "first_page": "ch1_phishing"
+  },
+  "lab:concept/multiclass": {
+   "label": {
+    "ko": "3클래스 분류",
+    "en": "Multiclass classification"
+   },
+   "type": "Concept",
+   "first_page": "ch1_phishing"
+  },
+  "lab:concept/class-imbalance": {
+   "label": {
+    "ko": "불균형 데이터",
+    "en": "Class imbalance"
+   },
+   "type": "Concept",
+   "first_page": "ch1_phishing"
+  },
+  "lab:concept/train-test-split": {
+   "label": {
+    "ko": "학습/시험 나누기",
+    "en": "Train-test split"
+   },
+   "type": "Method",
+   "first_page": "ch1_phishing"
+  },
+  "lab:concept/stratify": {
+   "label": {
+    "ko": "층화 추출",
+    "en": "Stratified split"
+   },
+   "type": "Method",
+   "first_page": "ch1_phishing"
+  },
+  "lab:claim/one-rule-limit": {
+   "label": {
+    "ko": "규칙 하나로는 의심 사이트를 못 잡는다",
+    "en": "A single rule cannot catch suspicious sites"
+   },
+   "type": "Claim",
+   "first_page": "ch1_phishing"
+  },
+  "lab:concept/feature": {
+   "label": {
+    "ko": "특성(단서)",
+    "en": "Feature"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/sfh": {
+   "label": {
+    "ko": "SFH (입력 폼이 가는 곳)",
+    "en": "Server Form Handler"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/popup": {
+   "label": {
+    "ko": "popUpWidnow (팝업 창)",
+    "en": "Pop-up window"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/ssl": {
+   "label": {
+    "ko": "SSLfinal_State (인증서)",
+    "en": "SSL final state"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/request-url": {
+   "label": {
+    "ko": "Request_URL",
+    "en": "Request URL"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/anchor": {
+   "label": {
+    "ko": "URL_of_Anchor",
+    "en": "URL of anchor"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/web-traffic": {
+   "label": {
+    "ko": "web_traffic (방문자 순위)",
+    "en": "Web traffic"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/url-length": {
+   "label": {
+    "ko": "URL_Length (주소 길이)",
+    "en": "URL length"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/domain-age": {
+   "label": {
+    "ko": "age_of_domain (도메인 나이)",
+    "en": "Age of domain"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:feature/ip": {
+   "label": {
+    "ko": "having_IP_Address",
+    "en": "Having IP address"
+   },
+   "type": "Concept",
+   "first_page": "ch2_clues"
+  },
+  "lab:concept/correlation": {
+   "label": {
+    "ko": "상관계수",
+    "en": "Correlation coefficient"
+   },
+   "type": "Metric",
+   "first_page": "ch2_clues"
+  },
+  "lab:claim/sign-reversal": {
+   "label": {
+    "ko": "9개 중 8개 단서가 설명서와 반대 방향",
+    "en": "Eight of nine features run opposite to the documented coding"
+   },
+   "type": "Claim",
+   "first_page": "ch2_clues"
+  },
+  "lab:question/sign-cause": {
+   "label": {
+    "ko": "왜 방향이 반대인가",
+    "en": "Why is the sign reversed?"
+   },
+   "type": "Question",
+   "first_page": "ch2_clues"
+  },
+  "lab:claim/combo-beats-single": {
+   "label": {
+    "ko": "단서 조합이 단서 하나보다 낫다",
+    "en": "Feature combination beats the best single feature"
+   },
+   "type": "Claim",
+   "first_page": "ch2_clues"
+  },
+  "lab:concept/missing-value": {
+   "label": {
+    "ko": "결측값",
+    "en": "Missing value"
+   },
+   "type": "Concept",
+   "first_page": "ch3_checkup"
+  },
+  "lab:method/iqr-rule": {
+   "label": {
+    "ko": "IQR 이상치 규칙",
+    "en": "IQR outlier rule"
+   },
+   "type": "Method",
+   "first_page": "ch3_checkup"
+  },
+  "lab:method/z-score": {
+   "label": {
+    "ko": "Z 점수 규칙",
+    "en": "Z-score rule"
+   },
+   "type": "Method",
+   "first_page": "ch3_checkup"
+  },
+  "lab:claim/iqr-false-alarm": {
+   "label": {
+    "ko": "범주형 단서에서 IQR은 오탐을 만든다",
+    "en": "IQR raises false alarms on categorical features"
+   },
+   "type": "Claim",
+   "first_page": "ch3_checkup"
+  },
+  "lab:concept/duplicate-rows": {
+   "label": {
+    "ko": "중복 행",
+    "en": "Duplicate rows"
+   },
+   "type": "Concept",
+   "first_page": "ch3_checkup"
+  },
+  "lab:concept/label-conflict": {
+   "label": {
+    "ko": "정답 충돌",
+    "en": "Label conflict"
+   },
+   "type": "Concept",
+   "first_page": "ch3_checkup"
+  },
+  "lab:concept/accuracy-ceiling": {
+   "label": {
+    "ko": "정확도 천장",
+    "en": "Accuracy ceiling"
+   },
+   "type": "Metric",
+   "first_page": "ch3_checkup"
+  },
+  "lab:method/isolation-forest": {
+   "label": {
+    "ko": "Isolation Forest",
+    "en": "Isolation Forest"
+   },
+   "type": "Method",
+   "first_page": "ch3_checkup"
+  },
+  "lab:method/lof": {
+   "label": {
+    "ko": "LOF",
+    "en": "Local Outlier Factor"
+   },
+   "type": "Method",
+   "first_page": "ch3_checkup"
+  },
+  "lab:method/smote": {
+   "label": {
+    "ko": "SMOTE",
+    "en": "SMOTE"
+   },
+   "type": "Method",
+   "first_page": "ch4_models"
+  },
+  "lab:method/logistic-regression": {
+   "label": {
+    "ko": "로지스틱 회귀 (다항)",
+    "en": "Multinomial logistic regression"
+   },
+   "type": "Method",
+   "first_page": "ch4_models"
+  },
+  "lab:concept/softmax": {
+   "label": {
+    "ko": "소프트맥스",
+    "en": "Softmax"
+   },
+   "type": "Concept",
+   "first_page": "ch4_models"
+  },
+  "lab:method/decision-tree": {
+   "label": {
+    "ko": "의사결정나무",
+    "en": "Decision tree"
+   },
+   "type": "Method",
+   "first_page": "ch4_models"
+  },
+  "lab:concept/overfitting": {
+   "label": {
+    "ko": "과적합",
+    "en": "Overfitting"
+   },
+   "type": "Concept",
+   "first_page": "ch4_models"
+  },
+  "lab:method/gradient-boosting": {
+   "label": {
+    "ko": "그래디언트 부스팅",
+    "en": "Gradient boosting"
+   },
+   "type": "Method",
+   "first_page": "ch4_models"
+  },
+  "lab:concept/feature-importance": {
+   "label": {
+    "ko": "특성 중요도",
+    "en": "Feature importance"
+   },
+   "type": "Metric",
+   "first_page": "ch4_models"
+  },
+  "lab:concept/data-leakage": {
+   "label": {
+    "ko": "데이터 누수",
+    "en": "Data leakage"
+   },
+   "type": "Concept",
+   "first_page": "ch4_models"
+  },
+  "lab:claim/smote-before-split": {
+   "label": {
+    "ko": "나누기 전 SMOTE는 누수다",
+    "en": "SMOTE before splitting leaks test information"
+   },
+   "type": "Claim",
+   "first_page": "ch4_models"
+  },
+  "lab:claim/tune-on-test": {
+   "label": {
+    "ko": "시험지로 설정을 고르면 반칙",
+    "en": "Tuning on the test set is cheating"
+   },
+   "type": "Claim",
+   "first_page": "ch4_models"
+  },
+  "lab:metric/accuracy": {
+   "label": {
+    "ko": "정확도",
+    "en": "Accuracy"
+   },
+   "type": "Metric",
+   "first_page": "ch5_final"
+  },
+  "lab:metric/confusion-matrix": {
+   "label": {
+    "ko": "혼동행렬",
+    "en": "Confusion matrix"
+   },
+   "type": "Metric",
+   "first_page": "ch5_final"
+  },
+  "lab:metric/macro-f1": {
+   "label": {
+    "ko": "macro F1",
+    "en": "Macro F1"
+   },
+   "type": "Metric",
+   "first_page": "ch5_final"
+  },
+  "lab:metric/recall": {
+   "label": {
+    "ko": "재현율",
+    "en": "Recall"
+   },
+   "type": "Metric",
+   "first_page": "ch5_final"
+  },
+  "lab:metric/precision": {
+   "label": {
+    "ko": "정밀도",
+    "en": "Precision"
+   },
+   "type": "Metric",
+   "first_page": "ch5_final"
+  },
+  "lab:method/cross-validation": {
+   "label": {
+    "ko": "5겹 교차검증",
+    "en": "5-fold cross-validation"
+   },
+   "type": "Method",
+   "first_page": "ch5_final"
+  },
+  "lab:concept/unseen-patterns": {
+   "label": {
+    "ko": "처음 보는 단서 조합",
+    "en": "Unseen feature patterns"
+   },
+   "type": "Concept",
+   "first_page": "ch5_final"
+  },
+  "lab:claim/winner-gb": {
+   "label": {
+    "ko": "종합 우승은 그래디언트 부스팅",
+    "en": "Gradient boosting wins all four main rounds"
+   },
+   "type": "Claim",
+   "first_page": "ch5_final"
+  },
+  "lab:claim/dt-suspicious": {
+   "label": {
+    "ko": "의심 F1은 의사결정나무가 1위",
+    "en": "Decision tree has the best suspicious-class F1"
+   },
+   "type": "Claim",
+   "first_page": "ch5_final"
+  },
+  "lab:claim/seen-unseen-gap": {
+   "label": {
+    "ko": "처음 보는 조합에서 10%p 넘게 떨어진다",
+    "en": "Accuracy drops over 10 pp on unseen patterns"
+   },
+   "type": "Claim",
+   "first_page": "ch5_final"
+  },
+  "lab:question/notebook-diff": {
+   "label": {
+    "ko": "노트북 값과 재현 값의 차이 원인",
+    "en": "Why do notebook and reproduced values differ?"
+   },
+   "type": "Question",
+   "first_page": "ch5_final"
+  },
+  "lab:tool/inspection-window": {
+   "label": {
+    "ko": "사이트 검사 창구",
+    "en": "Site inspection window"
+   },
+   "type": "Simulation",
+   "first_page": "ch6_practice"
+  },
+  "lab:tool/inspection-line": {
+   "label": {
+    "ko": "검사 라인",
+    "en": "Inspection line"
+   },
+   "type": "Simulation",
+   "first_page": "ch6_practice"
+  },
+  "lab:task/reproduce-colab": {
+   "label": {
+    "ko": "Colab에서 대회 다시 치르기",
+    "en": "Reproduce in Colab"
+   },
+   "type": "Task",
+   "first_page": "ch6_practice"
+  },
+  "lab:concept/deployment-checks": {
+   "label": {
+    "ko": "배포 전 점검",
+    "en": "Deployment checks"
+   },
+   "type": "Concept",
+   "first_page": "ch6_practice"
+  },
+  "lab:claim/one-layer": {
+   "label": {
+    "ko": "탐지 모델은 한 겹의 방어",
+    "en": "A detector is one layer of defense"
+   },
+   "type": "Claim",
+   "first_page": "ch6_practice"
+  }
+ }
+}

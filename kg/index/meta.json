@@ -1,0 +1,42 @@
+{
+ "title": "가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (목차)",
+ "number": "0",
+ "series": "피싱 사이트 탐지 연구실 (catch_phishing_lab)",
+ "about": [
+  "lab:series/catch-phishing-lab",
+  "lab:concept/phishing"
+ ],
+ "basedOn": [
+  "abdelhamid2014uci",
+  "ahn2026lecture",
+  "abdelhamid2014eswa"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-21",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/catch_phishing/",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "domain": [
+  "ai",
+  "stats"
+ ],
+ "suggestedCitation": "안상선 (2026). 가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (목차). 피싱 사이트 탐지 연구실 (catch_phishing_lab) 0, v1.0."
+}

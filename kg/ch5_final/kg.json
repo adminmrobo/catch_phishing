@@ -1,0 +1,274 @@
+{
+ "version": "1.0",
+ "page": "ch5_final",
+ "nodes": [
+  {
+   "id": "lab:metric/accuracy",
+   "type": "Metric",
+   "label": {
+    "ko": "정확도",
+    "en": "Accuracy"
+   },
+   "page": "ch5_final",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "맞힌 비율"
+   }
+  },
+  {
+   "id": "lab:metric/confusion-matrix",
+   "type": "Metric",
+   "label": {
+    "ko": "혼동행렬",
+    "en": "Confusion matrix"
+   },
+   "page": "ch5_final",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "실제 × 예측 3×3 표"
+   }
+  },
+  {
+   "id": "lab:metric/macro-f1",
+   "type": "Metric",
+   "label": {
+    "ko": "macro F1",
+    "en": "Macro F1"
+   },
+   "page": "ch5_final",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답별 F1의 단순 평균"
+   }
+  },
+  {
+   "id": "lab:metric/recall",
+   "type": "Metric",
+   "label": {
+    "ko": "재현율",
+    "en": "Recall"
+   },
+   "page": "ch5_final",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "실제 정답 중 찾아낸 비율"
+   }
+  },
+  {
+   "id": "lab:metric/precision",
+   "type": "Metric",
+   "label": {
+    "ko": "정밀도",
+    "en": "Precision"
+   },
+   "page": "ch5_final",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "고른 것 중 맞은 비율"
+   }
+  },
+  {
+   "id": "lab:method/cross-validation",
+   "type": "Method",
+   "label": {
+    "ko": "5겹 교차검증",
+    "en": "5-fold cross-validation"
+   },
+   "page": "ch5_final",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "다섯 판 평균과 흔들림"
+   }
+  },
+  {
+   "id": "lab:concept/unseen-patterns",
+   "type": "Concept",
+   "label": {
+    "ko": "처음 보는 단서 조합",
+    "en": "Unseen feature patterns"
+   },
+   "page": "ch5_final",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시험지 중 98개"
+   }
+  },
+  {
+   "id": "lab:claim/winner-gb",
+   "type": "Claim",
+   "label": {
+    "ko": "종합 우승은 그래디언트 부스팅",
+    "en": "Gradient boosting wins all four main rounds"
+   },
+   "page": "ch5_final",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정확도·macro F1·교차검증·처음 보는 조합 1위"
+   }
+  },
+  {
+   "id": "lab:claim/dt-suspicious",
+   "type": "Claim",
+   "label": {
+    "ko": "의심 F1은 의사결정나무가 1위",
+    "en": "Decision tree has the best suspicious-class F1"
+   },
+   "page": "ch5_final",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "0.7907"
+   }
+  },
+  {
+   "id": "lab:claim/seen-unseen-gap",
+   "type": "Claim",
+   "label": {
+    "ko": "처음 보는 조합에서 10%p 넘게 떨어진다",
+    "en": "Accuracy drops over 10 pp on unseen patterns"
+   },
+   "page": "ch5_final",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "세 모델 모두"
+   }
+  },
+  {
+   "id": "lab:question/notebook-diff",
+   "type": "Question",
+   "label": {
+    "ko": "노트북 값과 재현 값의 차이 원인",
+    "en": "Why do notebook and reproduced values differ?"
+   },
+   "page": "ch5_final",
+   "anchor": "#s6",
+   "level": 2,
+   "status": "open",
+   "confidence": "low",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "버전 차이로 추정, 미확인"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:metric/precision",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:metric/macro-f1",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/recall",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:metric/macro-f1",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/seen-unseen-gap",
+   "p": "lab:about",
+   "o": "lab:concept/unseen-patterns",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/dt-suspicious",
+   "p": "lab:contrastsWith",
+   "o": "lab:claim/winner-gb",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/confusion-matrix",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:metric/recall",
+   "anchor": "#s2",
+   "confidence": "high"
+  }
+ ]
+}
